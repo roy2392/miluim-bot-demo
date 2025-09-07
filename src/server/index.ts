@@ -52,7 +52,7 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
-app.get('/api/health', (req, res) => {
+app.get('/api/health', (_req, res) => {
   res.json({ 
     status: isInitialized ? 'ready' : 'initializing',
     timestamp: new Date().toISOString()
