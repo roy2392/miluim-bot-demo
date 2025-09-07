@@ -73,3 +73,7 @@ miloaim-chat/
 - הפרויקט דורש מפתח API של OpenAI
 - הסקרייפר אוסף עד 50 מאמרים כברירת מחדל
 - הוקטור סטור נשמר לוקלית ב-`data/vectorstore`
+
+## פריסה ל-Vercel
+
+הפרויקט מוכן לפריסה ב-Vercel עם תמיכה מלאה ב-serverless functions.

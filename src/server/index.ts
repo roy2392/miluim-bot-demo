@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { VectorStore } from './vectorStore';
-import { ChatService } from './chatService';
+import { VectorStore } from './vectorStore.js';
+import { ChatService } from './chatService.js';
 
 dotenv.config();
 

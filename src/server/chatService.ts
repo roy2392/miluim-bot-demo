@@ -1,5 +1,5 @@
 import OpenAI from 'openai';
-import { VectorStore } from './vectorStore';
+import { VectorStore } from './vectorStore.js';
 
 export class ChatService {
   private openai: OpenAI;
