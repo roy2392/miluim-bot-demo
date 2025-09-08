@@ -15,7 +15,6 @@ function App() {
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
-  const [showQuickReplies, setShowQuickReplies] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -36,7 +35,6 @@ function App() {
 
     setMessages((prev) => [...prev, userMessage]);
     setIsTyping(true);
-    setShowQuickReplies(false);
 
     try {
       const response = await fetch('/api/chat', {
@@ -76,7 +74,7 @@ function App() {
       <ChatHeader />
       <MessageList messages={messages} isTyping={isTyping} />
       <div ref={messagesEndRef} />
-      {showQuickReplies && <QuickReplies onQuickReply={handleSendMessage} />}
+      <QuickReplies onQuickReply={handleSendMessage} />
       <MessageInput onSendMessage={handleSendMessage} />
     </div>
   );
